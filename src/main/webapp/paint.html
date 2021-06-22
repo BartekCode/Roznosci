@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator farby</title>
+</head>
+<body>
+<h1>Policz ile farby potrzebujesz</h1>
+<p>Wymiary należy podać w cm.</p>
+
+<form method="post" action="paintcalculate">
+    <fieldset>
+        <legend>Informacje o pomieszczeniu</legend>
+        <div>
+            <label for="length">Długość pomieszczenia:</label>
+            <input name="roomLength" type="number" id="length">
+        </div>
+        <div>
+            <label for="width">Szerokość pomieszczenia</label>
+            <input name="roomWidth" type="number" id="width">
+        </div>
+        <div>
+            <label for="height">Wysokość pomieszczenia</label>
+            <input name="roomHeight" type="number" id="height">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Okna i drzwi</legend>
+        <div id="construction-container">
+            <input type="hidden" value="0" name="constructionElements" id="construction-elements">
+            <button id="add-button" type="button">Dodaj okno lub drzwi</button>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Informacje o farbie</legend>
+        <div>
+            <label for="paint-coverage">Wydajność farby z 1L (w mkw)</label>
+            <input name="paintCoverage" id="paint-coverage" type="number">
+        </div>
+        <div>
+            <label for="paint-coats">Zakładana liczba warstw</label>
+            <input name="paintCoats" id="paint-coats" type="number">
+        </div>
+    </fieldset>
+    <input  type="submit" value="Policz">
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>

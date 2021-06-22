@@ -1,0 +1,20 @@
+div {
+    text-align: center;
+    background-color: bisque;
+    border-style: solid;
+}
+.numer{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+ #guzik{
+    background-color: burlywood;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

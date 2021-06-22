@@ -1,0 +1,6 @@
+<%@page contentType="text/html;charset=UTF-8" language="java" %>
+<header>
+    <ul style="display:inline;">
+        <li><a href="${pageContext.request.contextPath}/">Strona główna</a> </li>
+    </ul>
+</header>
